@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(247, 245, 235);
+    color: #5c4b2d;
+    overflow-x: hidden;
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: rgba(92, 75, 45, 0.9);
+    width: 100%;
+    z-index: 100;
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu p {
+    font-weight: 1000;
+    font-size: 20px;
+    color: rgb(247, 244, 227);
+}
+
+.inicio {
+    display: flex;
+    padding: 7rem 6rem;
+
+}
+
+.inicio img {
+    width: 400px;
+    height: 525px;
+    border-radius: 5px;
+    box-shadow: 0 9px 20px 0 rgba(0,0,0,0.1);
+}
+
+.textos-inicio {
+    flex-direction: column;
+    padding: 8rem 0 4rem 0;
+    width: 700px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.textos-inicio h1 {
+    padding: 0.5rem;
+    font-weight: 1000;
+}
+
+.textos-inicio p {
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.sobre h1{
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    font-weight: 1000;
+}
+
+.sobre p {
+    text-align: center;
+    margin: 0 auto;
+    width: 1150px;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.visual {
+    display: flex;
+    padding: 6rem 4rem;
+    gap: 10rem;
+}
+
+.texto-visual {
+    flex-direction: column;
+    padding: 8rem 0 4rem 0;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.visual h1 {
+    padding: 0.5rem;
+    font-weight: 1000;
+}
+
+.visual p {
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.img-visual {
+    width: 400px;
+    height: 525px;
+    background-image: url(/src/antes.png);
+    background-size: 405px 530px;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0 9px 20px 0 rgba(0,0,0,0.1);
+}
+
+.img-visual:hover {
+    background-image: url(/src/depois.png);
+    transition: 1s;
+}
+
+.acesso {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.botao {
+    width: 200px;
+    height: 75px;
+    border-radius: 15px;
+    background-color: #5c4b2d;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.botao a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(247, 244, 227);
+}
+
+.botao img {
+    width: 32px;
+    height: 32px;
+}
+
+.botao p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
