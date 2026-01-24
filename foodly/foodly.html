@@ -4,8 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Foodly</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <section class="apresentacao">
+        <img src="../assets/foodly/logo branca.png" alt="">
+        <p>
+            O Foodly é, até o momento, o projeto mais significativo da minha trajetória acadêmica, tendo sido desenvolvido como 
+            o projeto de conclusão do meu curso técnico em informática. O objetivo central foi criar uma rede social dedicada 
+            exclusivamente à culinária, criando um ambiente digital onde usuários poderiam compartilhar receitas autorais para 
+            promover a troca cultural e interações saudáveis em torno da gastronomia. Durante o desenvolvimento, foquei na 
+            construção de uma arquitetura sólida utilizando HTML, CSS, JS, PHP e MySQL, o que me permitiu lidar com desafios 
+            complexos de integração entre o backend e o banco de dados, especialmente na gestão de ambientes locais. Outro ponto 
+            muito importante no projeto foi o design e sua construção visual, pensando com precisão quais cores, elementos e formas 
+            seriam utilizados. O resultado é um sistema funcional que une um design intuitivo com uma lógica de programação 
+            bem pensada, refletindo tanto a parte técnica quanto a capacidade de idealizar e executar um projeto completo de ponta a ponta.
+        </p>
+        <br>
+        <p>
+            Confira abaixo todas as funções da aplicação:
+        </p>
+    </section>
+    <section class="funcionalidades">
+        <div class="content">
+            <div class="texto-content">
+                <p class="titulo">Registro e Login</p>
+                <p class="texto">
+                    A implementação do sistema de registro e login foi tratada como um dos pilares centrais do Foodly, sendo a 
+                    funcionalidade que permite a existência de múltiplas contas e a personalização da experiência em uma rede 
+                    social. Todo o fluxo está diretamente integrado a um banco de dados MySQL, garantindo que as credenciais 
+                    sejam processadas e validadas em tempo real com total precisão. O sistema opera sem falhas, contando com 
+                    travas de segurança que impedem a duplicidade de e-mails e exibem alertas imediatos caso o usuário ou a senha 
+                    informados estejam incorretos no momento do acesso. Além disso, incluí um recurso de visualização da senha 
+                    para melhorar a usabilidade durante o preenchimento, evitando erros operacionais. Embora o núcleo de 
+                    autenticação esteja robusto e funcional, etapas futuras do projeto preveem a adição de recursos complementares, 
+                    como a funcionalidade de "lembrar-se" do usuário e o fluxo de recuperação de senha, que ainda não foram 
+                    integrados nesta versão.
+                </p>
+            </div>
+            <img class="login-GIF" src="../assets/foodly/registrando.gif" alt="">
+        </div>
+        <div class="content">
+            <div class="texto-content">
+                <p class="titulo">Postagem de receitas</p>
+                <p class="texto">
+                    A funcionalidade de postagem de receitas constitui o verdadeiro coração do Foodly, sendo o recurso essencial 
+                    que transforma o sistema em uma plataforma viva de compartilhamento e interação. Projetei um sistema 
+                    intencionalmente simples e flexível, onde o foco total está no conteúdo textual: o usuário escreve sua receita 
+                    da maneira que desejar em um campo de texto livre, e essa informação é armazenada integralmente no banco de 
+                    dados para ser exibida no feed. O desafio técnico aqui foi garantir que o fluxo de envio e recuperação desse 
+                    texto ocorresse sem erros de codificação, permitindo que a criatividade culinária flua sem a necessidade de 
+                    preencher campos rígidos ou formulários complexos. Este módulo é o que viabiliza a proposta de valor do 
+                    projeto, conectando a base de dados central às ações do usuário em tempo real.
+                </p>
+            </div>
+            <img class="gif" src="../assets/foodly/postando.gif" alt="">
+        </div>
+        <div class="content">
+            <div class="texto-content">
+                <p class="titulo">Apagar post</p>
+                <p class="texto">
+                    A implementação da funcionalidade de exclusão de postagens foi desenvolvida para garantir que o usuário tenha 
+                    controle total sobre o conteúdo compartilhado em seu perfil, assegurando a autonomia dentro da rede social. O 
+                    processo consiste em uma requisição direta ao banco de dados MySQL, que identifica o identificador único da 
+                    publicação e remove o registro de forma definitiva da tabela de receitas. Embora pareça uma operação simples, 
+                    o desenvolvimento exigiu uma atenção especial à lógica de permissões, garantindo que o comando de exclusão 
+                    seja executado apenas quando solicitado pelo autor legítimo da postagem, mantendo a integridade e a segurança 
+                    do sistema.
+                </p>
+            </div>
+            <img class="gif" src="../assets/foodly/apagando.gif" alt="">
+        </div>
+        <div class="content">
+            <div class="texto-content">
+                <p class="titulo">Comentar</p>
+                <p class="texto">
+                    O sistema de comentários foi projetado para elevar o nível de interatividade do Foodly, transformando 
+                    postagens estáticas em espaços de diálogo e troca de experiências culinárias. Ao selecionar a opção de 
+                    comentar, o usuário é direcionado para uma interface dedicada que isola a publicação escolhida, permitindo 
+                    uma leitura focada antes da interação. Abaixo do conteúdo principal, a aplicação carrega dinamicamente a 
+                    lista de mensagens já registradas, conectando-se ao banco de dados para exibir o histórico de conversas em 
+                    tempo real. A inclusão de uma caixa de texto intuitiva na base dessa aba facilita o envio de novas opiniões 
+                    ou dicas, que são processadas pelo backend e inseridas imediatamente na listagem global.
+                </p>
+            </div>
+            <img class="gif" src="../assets/foodly/comentando.gif" alt="">
+        </div>
+        <div class="content">
+            <div class="texto-content">
+                <p class="titulo">Compartilhar</p>
+                <p class="texto">
+                    A funcionalidade de compartilhamento foi idealizada para expandir o alcance das receitas para além da 
+                    plataforma, permitindo que cada publicação possua uma identidade única e acessível de forma externa. Ao 
+                    acionar o botão dedicado, o sistema executa um script que gera automaticamente um link dinâmico e o copia 
+                    para a área de transferência do usuário, exibindo simultaneamente uma notificação visual para confirmar o 
+                    sucesso da operação. O grande diferencial técnico desta ferramenta é o redirecionamento para um layout 
+                    exclusivo de visualização isolada: ao acessar o link, o sistema processa o identificador do post e renderiza 
+                    uma página focada inteiramente na receita escolhida. Diferente da seção de interações, este ambiente foi 
+                    planejado para priorizar a leitura e o consumo do conteúdo, omitindo as opções de comentário para destacar a 
+                    clareza da postagem.
+                </p>
+            </div>
+            <img class="gif" src="../assets/foodly/compartilhando.gif" alt="">
+        </div>
+    </section>
+    <section class="final">
+        <h1>Considerações finais do projeto</h1>
+        <p>
+            O Foodly foi, sem dúvida, o maior desafio que encarei até aqui, unindo uma série de funcionalidades que exigiram muito 
+            esforço para rodar. Mas, olhando para esse projeto hoje, mais de um ano depois de ter terminado o curso, a sensação é 
+            de que eu faria muita coisa diferente. É impossível bater o olho no código agora e não enxergar a bagunça e 
+            desorganização dele, se na época eu tivesse a organização e o conhecimento que tenho hoje, teria estruturado melhor as 
+            pastas e as funções, como também os próprios códigos, o que teria poupado horas de dor de cabeça e entregue um 
+            resultado bem mais redondo. Muita coisa que eu planejei acabou ficando pelo caminho e várias partes que funcionavam na 
+            época hoje já não rodam mais ou dão erro. No fim das contas, ele vale como um registro real do que eu era capaz de fazer no 
+            técnico e o quanto evoluí, servindo de base para as melhorias que ainda quero aplicar para deixar o sistema realmente pronto 
+            e organizado. Talvez algum dia eu o refaça, mas ele ainda me dá orgulho.
+        </p>
+    </section>
+    <section class="acesso">
+        <h1>Tenha acesso ao projeto aqui!</h1>
+        <div class="botao">
+            <a href="https://github.com/lorenzzop/foodly" target="_blank">
+                <img src="../assets/github-claro.png" alt="">
+                <p>Clique aqui</p>
+            </a>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fundo-claro: #eeeee7;
+    --amarelo: #ffb500;
+    --marrom: #413927;
+    --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--fundo-claro);
+}
+
+@keyframes subir {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-150%); /* Sobe para fora */
+        opacity: 0; /* Desvanece enquanto sobe */
+    }
+}
+
+.apresentacao {
+    background-color: var(--amarelo);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao img {
+    width: 500px;
+    height: 230px;
+    animation: subir linear both;
+    animation-timeline: view();
+    animation-range: exit 0% exit 100%;
+}
+
+.apresentacao p {
+    color: white;
+    width: 900px;
+    text-align: center;
+    font-weight: 550;
+    font-size: 20px;
+    animation: subir linear both;
+    animation-timeline: view();
+    animation-range: exit 0% exit 100%;
+}
+
+.funcionalidades {
+    background-color: var(--fundo-claro);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.content {
+    display: flex;
+    gap: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.texto-content {
+    flex-direction: column;
+    width: 700px;
+    color: var(--marrom);
+    animation: subir linear both;
+    animation-timeline: view();
+    animation-range: exit 0% exit 100%;
+    padding-top: 40px;
+}
+
+.titulo {
+    font-size: 35px;
+    font-weight: 700;
+    animation: subir linear both;
+    animation-timeline: view();
+    animation-range: exit 0% exit 100%;
+}
+
+.texto {
+    font-size: 18px;
+    font-weight: 550;
+    animation: subir linear both;
+    animation-timeline: view();
+    animation-range: exit 0% exit 100%;
+}
+
+.login-GIF {
+    width: 600px;
+    height: 400px;
+    animation: subir linear both;
+    animation-timeline: view();
+    animation-range: exit 0% exit 100%;
+}
+
+.gif {
+    width: 600px;
+    height: 400px;
+    animation: subir linear both;
+    animation-timeline: view();
+    animation-range: exit 0% exit 100%;
+    outline: 5px solid var(--fundo-claro); /* Cor do Foodly */
+    outline-offset: -5px; /* Empurra a borda para dentro */
+    border-radius: 30px; /* Se a imagem tiver rounded corners */
+    box-shadow: 10px 12px 25px 0 rgba(0,0,0,0.1);
+}
+
+.final {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.final h1 {
+    color: var(--marrom);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.final p {
+    color: var(--marrom);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+    width: 900px;
+}
+
+.acesso {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.acesso h1 {
+    color: var(--marrom);
+}
+
+.botao {
+    width: 200px;
+    height: 75px;
+    border-radius: 15px;
+    background-color: var(--amarelo);
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.botao a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.botao img {
+    width: 32px;
+    height: 32px;
+}
+
+.botao p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}

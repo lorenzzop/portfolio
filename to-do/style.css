@@ -115,7 +115,7 @@ body {
 .img-visual {
     width: 400px;
     height: 525px;
-    background-image: url(../assets/antes.png);
+    background-image: url(../assets/to-do/antes.png);
     background-size: 405px 530px;
     background-position: center;
     border-radius: 5px;
@@ -123,7 +123,7 @@ body {
 }
 
 .img-visual:hover {
-    background-image: url(../assets/depois.png);
+    background-image: url(../assets/to-do/depois.png);
     transition: 1s;
 }
 
