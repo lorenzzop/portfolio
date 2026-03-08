@@ -359,7 +359,7 @@ h1 {
     }
 
     .formacao {
-    padding: 6rem 2rem 2rem 3rem;
+    padding: 6rem 2rem 2rem 2rem;
     }
 
     .solon {
@@ -375,8 +375,8 @@ h1 {
     }
 
     .img-solon {
-        width: 300px;
-        height: 200px;
+        width: 325px;
+        height: 225px;
         border-radius: 10px;
         margin: 0 auto;
         object-fit: cover;
@@ -384,7 +384,7 @@ h1 {
     }
 
     .text-solon {
-        padding: 10px 15px;
+        padding: 5px;
         text-align: center;
     }
 
@@ -402,8 +402,8 @@ h1 {
     }
 
     .img-ufcspa {
-        width: 300px;
-        height: 200px;
+        width: 325px;
+        height: 225px;
         border-radius: 10px;
         margin: 0 auto;
         object-fit: cover;
@@ -411,7 +411,7 @@ h1 {
     }
 
     .text-ufcspa {
-        padding: 10px 15px;
+        padding: 5px;
         text-align: center;
     }
 
